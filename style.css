@@ -1,11 +1,70 @@
-*{
-    padding: 10px;
-    margin-top: 50px;
-    right: 20px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Black', sans-serif; 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
-.gradient{
+.gradient {
+    background: linear-gradient(45deg, #0a0577, #10232b, #0c0935, #0d4870);
+    background-size: 300% 300%;
+    min-height: 100vh;
+    width: 100vw;
+    animation: colors 15s infinite ease;
     
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+@keyframes colors {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.Estagio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.pequeno {
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.pequeno h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.iconesSite {
+    display: flex;
+    gap: 20px;
+}
+
+.iconesSite a {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.4s ease;
+}
+
+.iconesSite a:hover {
+    background-color: white;
+    color: #0a0577;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
